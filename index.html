@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -207,48 +207,195 @@
         </div>
       </div>
     </section>
+    <section class="site-faq">
+      <div class="container text-center">
+        <h2 class="subtittle">Frequently Asked Questions</h2>
+        <p class="description">
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+        <div class="accordion" id="faqAccordion">
+          <div class="card">
+            <div class="card-header" id="whatIsABookmarkHead">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#whatIsABookmark"
+                  aria-expanded="true"
+                  aria-controls="whatIsABookmark"
+                >
+                  Collapsible Group Item #1
+                </button>
+              </h2>
+            </div>
+
+            <div
+              id="whatIsABookmark"
+              class="collapse show"
+              aria-labelledby="whatIsABookmarkHead"
+              data-parent="#faqAccordion"
+            >
+              <div class="card-body text-left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                tincidunt justo eget ultricies fringilla. Phasellus blandit
+                ipsum quis quam ornare mattis.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="newBrowserHead">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#newBrowser"
+                  aria-expanded="false"
+                  aria-controls="newBrowser"
+                >
+                  How can I request a new browser
+                </button>
+              </h2>
+            </div>
+            <div
+              id="newBrowser"
+              class="collapse"
+              aria-labelledby="newBrowserHead"
+              data-parent="#faqAccordion"
+            >
+              <div class="card-body text-left">
+                Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
+                aliquet convallis ultricies. Mauris augue massa, ultricies non
+                ligula. Suspendisse imperdiet.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="mobileAppHead">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#mobileApp"
+                  aria-expanded="false"
+                  aria-controls="mobileApp"
+                >
+                  Is there a mobile App
+                </button>
+              </h2>
+            </div>
+            <div
+              id="mobileApp"
+              class="collapse"
+              aria-labelledby="mobileAppHead"
+              data-parent="#faqAccordion"
+            >
+              <div class="card-body text-left">
+                Sed consectetur quam id neque fermentum accumsan. Praesent
+                luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                Cras in ligula quis est pharetra mattis sit amet pharetra purus.
+                Sed sollicitudin ex et ultricies bibendum.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="chromiumBrowsersHead">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#chromiumBrowsers"
+                  aria-expanded="false"
+                  aria-controls="chromiumBrowsers"
+                >
+                  What about other Chromium Browsers
+                </button>
+              </h2>
+            </div>
+            <div
+              id="chromiumBrowsers"
+              class="collapse"
+              aria-labelledby="chromiumBrowsersHead"
+              data-parent="#faqAccordion"
+            >
+              <div class="card-body text-left">
+                Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                gravida pellentesque non ut velit.
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary more-info">More Info</a>
+      </div>
+    </section>
+    <section class="site-news">
+      <div class="container text-center">
+        <p class="stats">35,000+ ALREADY JOINED</p>
+        <h2 class="newsTittle">Stay up-to-date with what we’re doing</h2>
+        <form action="#" method="post" class="newsForm">
+          <div class="campo">
+            <div class="form-error-container">
+              <div class="form-error error">
+                <p>Whoops, make sure it's an email</p>
+              </div>
+              <div class="input-container">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Entrer your email address"
+                />
+                <div class="error-icon error">
+                  <i class="fas fa-exclamation"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="submit-container">
+            <input
+              type="submit"
+              value="Contact Us"
+              name="submit"
+              class="btn btn-submit"
+              id="btn-submit"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container text-center d-lg-flex row align-items-center">
+        <div class="logo-footer col-lg-3 align-items-center">
+          <div class="logo-footer-container">
+            <img src="images/logo-bookmark-footer.svg" alt="Logo Bookmark" />
+          </div>
+        </div>
+        <nav
+          class="nav d-flex flex-column flex-lg-row nav-footer col-lg-6 align-items-center"
+        >
+          <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </nav>
+        <div class="nav social-nav d-flex justify-content-center col-lg-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+          </li>
+        </div>
+      </div>
+    </footer>
     <!-- 
-
-  Frequently Asked Questions
-  
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us.
-
-
-  What is Bookmark?
-
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-
-
-  How can I request a new browser?
-
-
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-
-  Is there a mobile app?
-
-
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
-
-  What about other Chromium browsers?
-
-
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
-
-  More Info
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
   Contact Us
 
   Features
